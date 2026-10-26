@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="stylesheet" href="style.css">
+  <title>日付対戦 - 簡易デモ</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">日</div>
+        <div>
+          <h1>日付対戦</h1>
+          <div class="subtitle">ルール検証用・ローカル対戦デモ</div>
+        </div>
+      </div>
+      <div class="demo-badge">DEMO / v0.1</div>
+    </header>
+
+    <nav class="progress" id="progress" aria-label="ゲームの進行状況"></nav>
+    <div class="layout">
+      <main class="panel panel-main" id="mainPanel" aria-live="polite"></main>
+      <aside class="side-column">
+        <section class="panel side-panel">
+          <h3>対戦ステータス</h3>
+          <div id="statusPanel"></div>
+        </section>
+        <section class="panel side-panel">
+          <h3>ターン履歴</h3>
+          <div class="turn-log" id="turnLog"><div class="empty">対戦開始後に履歴が表示されます。</div></div>
+        </section>
+      </aside>
+    </div>
+    <div class="footer-note">データはブラウザ内だけで管理されます。ページを再読み込みするとリセットされます。</div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
